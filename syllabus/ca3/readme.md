@@ -2,6 +2,121 @@
 
 ---
 
+# **Short Questions**
+
+### **Module 1: Web and Internet Technology**  
+
+**What is the World Wide Web?**  
+The World Wide Web (WWW) is a system of interlinked web pages accessible through the internet using browsers.  
+
+**Define URL and its components.**  
+A URL (Uniform Resource Locator) is the address of a web resource. It consists of a protocol (`https://`), domain name (`example.com`), path (`/page`), and query parameters (`?id=1`).  
+
+**What is DNS and how does it work?**  
+DNS (Domain Name System) translates domain names into IP addresses, allowing browsers to locate and access websites.  
+
+**What is the purpose of FTP?**  
+FTP (File Transfer Protocol) is used for transferring files between a client and a server over a network.  
+
+**Differentiate between ARP and RARP.**  
+ARP (Address Resolution Protocol) converts an IP address to a MAC address, while RARP (Reverse ARP) converts a MAC address to an IP address.  
+
+**Explain TCP and its function in networking.**  
+TCP (Transmission Control Protocol) ensures reliable, ordered, and error-free data transmission over a network.  
+
+**What is flow control in TCP?**  
+Flow control prevents data loss by regulating the rate of data transmission using protocols like sliding window and stop-and-wait.  
+
+**Differentiate between Intranet, Extranet, and Internet.**  
+Intranet is a private network for internal users, Extranet allows controlled access to external partners, and the Internet is a global network accessible to everyone.  
+
+---
+
+### **Module 2: HTML and Web Development**  
+
+**What is HTML?**  
+HTML (HyperText Markup Language) is the standard language for structuring and displaying content on the web.  
+
+**Describe the basic structure of an HTML document.**  
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Heading</h1>
+    <p>Paragraph.</p>
+</body>
+</html>
+```  
+
+**List advantages and disadvantages of HTML.**  
+HTML is easy to learn, compatible with all browsers, and does not require software installation. However, it only supports static pages and requires CSS and JavaScript for styling and functionality.  
+
+**Explain `<h1>` to `<h6>` tags.**  
+These tags define headings, where `<h1>` is the largest and `<h6>` is the smallest.  
+
+**What is the purpose of the `<p>` tag?**  
+The `<p>` tag defines paragraphs in an HTML document.  
+
+**Differentiate between `<br>` and `<div>`.**  
+`<br>` inserts a line break, while `<div>` is a container for grouping elements and applying styles.  
+
+**What is the function of `<sub>` and `<sup>`?**  
+`<sub>` displays subscript text (H₂O), while `<sup>` displays superscript text (x²).  
+
+**How does the `<pre>` tag work?**  
+The `<pre>` tag preserves formatting, displaying text as written in the HTML file.  
+
+**Differentiate between `<big>` and `<small>`.**  
+`<big>` increases text size (deprecated in HTML5), while `<small>` decreases text size.  
+
+**What is the purpose of the `<i>` tag?**  
+The `<i>` tag italicizes text.  
+
+**Explain the `<img>` tag and its attributes.**  
+The `<img>` tag embeds images. Example:  
+```html
+<img src="image.jpg" alt="Description">
+```  
+
+**What is the function of `<a>` and `href`?**  
+The `<a>` tag creates hyperlinks. Example:  
+```html
+<a href="https://example.com">Click Here</a>
+```  
+
+**How can CSS be added to an HTML document?**  
+CSS can be added as inline styles, internal styles in the `<head>`, or as an external stylesheet linked with `<link>`.  
+
+**Differentiate between inline, internal, and external CSS.**  
+Inline CSS applies styles within elements, internal CSS is written inside `<style>` in `<head>`, and external CSS is in a separate `.css` file linked to the HTML.  
+
+**List ways to include JavaScript in an HTML document.**  
+JavaScript can be added inline using event attributes, internally within `<script>` tags, or externally by linking a `.js` file.  
+
+**Explain the advantages of external CSS and JavaScript.**  
+External CSS and JavaScript improve maintainability, enhance page speed, and keep HTML clean.  
+
+**How is an external CSS file linked in HTML?**  
+```html
+<link rel="stylesheet" href="style.css">
+```  
+
+**What is the purpose of the `<script>` tag?**  
+The `<script>` tag embeds JavaScript in an HTML document.  
+
+**How do you change an element’s color using JavaScript?**  
+```js
+document.getElementById("text").style.color = "red";
+```  
+
+**What is `document.getElementById()` used for?**  
+It selects an HTML element by its `id` to manipulate it using JavaScript.  
+
+---
+
 # **OSI Model and TCP/IP Model**
 
 ## **1. OSI Model (Open Systems Interconnection)**
