@@ -1,0 +1,272 @@
+## **Programming for Web Development (10 Hours)**
+
+---
+
+### **1. PERL (3L)**
+
+#### **Introduction**
+
+* PERL: Practical Extraction and Report Language.
+* Scripting language used for server-side tasks, text manipulation, and CGI scripting.
+
+#### **Variables**
+
+* **Scalars** (`$var`) – single values.
+* **Arrays** (`@arr`) – ordered list.
+* **Hashes** (`%hash`) – key-value pairs.
+* Variables must be declared with `my`.
+
+#### **Conditions**
+
+```perl
+if (condition) { ... }
+elsif (condition) { ... }
+else { ... }
+```
+
+#### **Loops**
+
+* `for`, `foreach`, `while`, `until`, `do-while`
+
+#### **Arrays**
+
+* Creation: `@arr = (1, 2, 3);`
+* Access: `$arr[0]`
+* Operations: `push`, `pop`, `shift`, `unshift`, `splice`
+
+#### **Data Structures**
+
+* Arrays of arrays
+* Hashes of arrays
+* Complex nested structures
+
+#### **Hashes**
+
+* `%hash = ("key1" => "value1", "key2" => "value2");`
+* Access: `$hash{"key1"}`
+
+#### **Strings**
+
+* Concatenation: `"Hello"."World"`
+* String functions: `length`, `index`, `substr`, `lc`, `uc`
+
+#### **Regular Expressions**
+
+* Pattern matching with `=~` operator:
+
+```perl
+if ($str =~ /pattern/) { ... }
+```
+
+* Metacharacters: \`. ^ \$ \* + ? {} \[] \ |
+* Modifiers: `i`, `g`, `m`
+
+#### **File Handling**
+
+```perl
+open(my $fh, "<", "file.txt") or die $!;
+while (my $line = <$fh>) { ... }
+close($fh);
+```
+
+#### **I/O Handling**
+
+* `<STDIN>` to read input
+* `print`, `say`, `warn`, `die` for output and errors
+
+---
+
+### **2. JavaScript (4L)**
+
+#### **Basics**
+
+* Client-side scripting language for dynamic web content.
+* Can interact with HTML DOM and CSS.
+
+#### **Statements & Comments**
+
+```js
+// single-line
+/* multi-line */
+```
+
+#### **Variables**
+
+* `var`, `let`, `const`
+* Dynamic typing
+
+#### **Comparisons & Conditions**
+
+```js
+if (x == y) { }
+else if (x === y) { }
+```
+
+* Operators: `==`, `===`, `!=`, `<`, `>`, `<=`, `>=`
+
+#### **Switch**
+
+```js
+switch(expr) {
+  case val1: break;
+  case val2: break;
+  default: break;
+}
+```
+
+#### **Loops**
+
+* `for`, `while`, `do-while`, `for-in`, `for-of`
+
+#### **Break**
+
+* `break`: exits loop
+* `continue`: skips to next iteration
+
+#### **Objects**
+
+* **Object Literals**: `let obj = { key: value };`
+* **Built-in Objects**:
+
+  * **String**: `length`, `charAt`, `indexOf`
+  * **Array**: `push`, `pop`, `splice`, `map`, `filter`
+  * **Boolean**: true/false logic
+  * **RegExp**: `/pattern/flags`
+
+#### **Functions**
+
+```js
+function name(params) { return val; }
+let x = function() { };
+let y = () => { }; // arrow function
+```
+
+#### **Errors**
+
+* `try`, `catch`, `finally`, `throw`
+
+#### **Validation**
+
+* HTML form validation using JavaScript
+* Checking fields: empty, pattern, number, range, etc.
+
+---
+
+### **3. Cookies (1L)**
+
+#### **Definition**
+
+* Small pieces of data stored on the client by the browser.
+
+#### **Creating a Cookie**
+
+```js
+document.cookie = "username=John; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+```
+
+#### **Reading a Cookie**
+
+```js
+let cookies = document.cookie;
+```
+
+#### **Example**
+
+```js
+// Create
+document.cookie = "user=Alice; path=/";
+// Read
+let x = document.cookie;
+```
+
+---
+
+### **4. Java Applets (2L)**
+
+#### **Container Class**
+
+* Applets reside in a container provided by a browser or `AppletViewer`.
+
+#### **Components**
+
+* GUI elements: `Button`, `Label`, `TextField`, `Checkbox`, etc.
+* Package: `java.awt.*`
+
+#### **Applet Life Cycle**
+
+| Method      | Purpose                       |
+| ----------- | ----------------------------- |
+| `init()`    | Initialization                |
+| `start()`   | Executed after init or resume |
+| `stop()`    | Suspends the applet           |
+| `destroy()` | Final cleanup                 |
+
+#### **Update Method**
+
+* `update(Graphics g)` used with `repaint()` for custom rendering.
+
+#### **Parameter Passing**
+
+```java
+String param = getParameter("paramName");
+```
+
+* Passed using `<param name="paramName" value="value">` in HTML.
+
+#### **Applications**
+
+* Small interactive components
+* Games, calculators, animations
+
+> Note: Java Applets are **deprecated** in modern browsers.
+
+---
+
+### **5. Client-Server Programming in Java (2L)**
+
+#### **Java Socket Programming**
+
+* **Client Side**
+
+```java
+Socket s = new Socket("localhost", 5000);
+OutputStream os = s.getOutputStream();
+```
+
+* **Server Side**
+
+```java
+ServerSocket ss = new ServerSocket(5000);
+Socket s = ss.accept();
+```
+
+* I/O via `InputStream`, `OutputStream`
+
+#### **Java RMI (Remote Method Invocation)**
+
+* Allows invoking methods on remote Java objects.
+
+| Component        | Role                              |
+| ---------------- | --------------------------------- |
+| Remote Interface | Declares remote methods           |
+| Implementation   | Implements the interface          |
+| Stub/Skeleton    | Generated by `rmic` tool          |
+| Registry         | Registers remote objects          |
+| Client           | Looks up and calls remote methods |
+
+* Uses `java.rmi` package
+* Communication over TCP/IP
+
+---
+
+## **Summary Table**
+
+| Section            | Topics                                                      |
+| ------------------ | ----------------------------------------------------------- |
+| PERL               | Syntax, Variables, Arrays, Hashes, File/I/O Handling, RegEx |
+| JavaScript         | Core syntax, Built-in objects, DOM use, Validation          |
+| Cookies            | Definition, Creation, Access                                |
+| Java Applets       | Lifecycle, GUI, Params, Drawing                             |
+| Java Client-Server | Socket programming, RMI                                     |
+
+---
